@@ -1,0 +1,458 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.top-bar {
+  background-color: #d80000;
+  color: white;
+  text-align: center;
+  padding: 5px 0;
+  font-size: 14px;
+}
+.marquee {
+display: inline-block;
+white-space: nowrap;
+animation: scroll-left 8s linear infinite;
+}
+
+@keyframes scroll-left {
+0% {
+transform: translateX(100%);
+}
+100% {
+transform: translateX(-100%);
+}
+}
+
+header {
+  background-color: #f5f5f5;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-container img {
+  height: 100px;
+  width: auto;
+}
+
+.logo-text {
+  font-size: 20px;
+  font-weight: bold;
+  color: #d80000;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+nav ul li a:hover {
+  color: #d80000;
+}
+
+.icons {
+  display: flex;
+  gap: 20px;
+  font-size: 18px;
+  color: #000;
+}
+
+.icons i:hover {
+  color: #d80000;
+  cursor: pointer;
+}
+.hero {
+  width: 100%;
+  height: 100vh;
+  background-image: url('hero3.jpg'); /* zamijeni ako koristiš drugu putanju */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  text-align: center;
+  color: white;
+  margin-top: 0;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.4); /* tamni sloj za bolju čitljivost teksta */
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+  padding: 20px;
+}
+
+.cta-button {
+  margin-top: 20px;
+  background-color: #d80000;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #ff4500;
+}
+.hero-content h1 {
+  font-size: 48px;         /* veličina naslova */
+  font-weight: bold;       /* podebljan tekst */
+  margin-bottom: 20px;     /* razmak ispod h1 */
+  color: #fff;             /* boja teksta */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* sjena za čitljivost */
+}
+
+.hero-content p {
+  font-size: 20px;
+  color: #f1f1f1;
+  margin-bottom: 30px;
+}
+
+.hero-content {
+  text-align: center;       /* centriranje teksta */
+  padding: 20px;
+}
+.ponuda {
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.ponuda h2 {
+  font-size: 36px;
+  color: #d80000;
+  margin-bottom: 40px;
+}
+
+.ponuda-kartice {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.kartica {
+  background-color: white;
+  padding: 30px;
+  width: 300px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  border-radius: 10px;
+}
+
+.kartica i {
+  font-size: 40px;
+  color: #d80000;
+  margin-bottom: 15px;
+}
+
+.kartica h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.kartica p {
+  color: #555;
+}
+.vozilo-izbor {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: #f2f2f2;
+}
+
+.vozilo-izbor h2 {
+  color: #d80000;
+  margin-bottom: 20px;
+}
+
+.vozilo-izbor select {
+  padding: 10px;
+  margin: 10px;
+  font-size: 16px;
+}
+
+.recenzije {
+  padding: 40px 20px;
+  background-color: #f5f5f5; /* Svijetlosiva pozadina */
+  text-align: center;
+  overflow: hidden; /* Skriva dio koji izlazi iz okvira */
+  position: relative;
+}
+
+.recenzije h2 {
+  color: #d80000; /* Crvena boja za naslov */
+  margin-bottom: 30px;
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.recenzije-wrapper {
+  display: flex;
+  gap: 30px; /* Razmak između recenzija */
+  animation: scroll-right 3s linear infinite; /* Animacija pomicanja recenzija udesno */
+}
+
+@keyframes scroll-right {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%); /* Pomjeranje recenzija udesno */
+  }
+}
+
+.recenzije {
+  padding: 40px 20px;
+  background-color: #d80000; /* Crvena pozadina cijele sekcije */
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.recenzije h2 {
+  color: #fff;
+  margin-bottom: 30px;
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.recenzije-wrapper {
+  display: flex;
+  gap: 30px;  /* Povećana udaljenost između kartica */
+  animation: scroll-right 30s linear infinite; /* Usporena animacija */
+}
+
+@keyframes scroll-right {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.recenzija {
+  background-color: #f5f5f5; /* Svijetlo siva pozadina za kartice */
+  border-radius: 10px;
+  padding: 20px;
+  width: 400px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease; /* Efekt podizanja kartica */
+}
+
+
+
+.korisnik {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.korisnik .ikonica {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%; /* Krug za ikonu */
+  background-color: #d80000; /* Crvena pozadina za ikonu */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 30px; /* Ikonica je veća */
+}
+
+.ime {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+}
+
+.recenzija-text {
+  text-align: left;
+}
+
+.ocjena {
+  font-size: 20px;
+  color: #ffbf00;
+  margin-bottom: 10px;
+}
+
+.recenzija p {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Pauza pri hoveru nad recenzijama */
+.recenzije-wrapper:hover {
+  animation-play-state: paused; /* Animacija se zaustavi kad pređete mišem */
+}
+
+.recenzija:hover {
+  transform: scale(1.05); /* Povećava karticu na hover */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Povećava shadow efekt */
+}
+.footer {
+  background-color: #333;
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.footer p {
+  margin: 10px 0;
+  font-size: 14px;
+}
+
+.footer .social-media {
+  margin: 20px 0;
+}
+
+.footer .social-media a {
+  color: white;
+  margin: 0 15px;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.footer .social-media a:hover {
+  text-decoration: underline;
+}
+
+.footer .contact-info {
+  margin: 20px 0;
+  font-size: 16px;
+}
+
+.footer .contact-info a {
+  color: #f1f1f1;
+  text-decoration: none;
+}
+
+.footer .contact-info a:hover {
+  text-decoration: underline;
+}
+
+.footer .footer-links {
+  margin-top: 20px;
+}
+
+.footer .footer-links a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.footer .footer-links a:hover {
+  text-decoration: underline;
+}
+
+  /* SAMO ZA MOBILNE UREĐAJE */
+
+/* Sakrij hamburger ikonu na desktopu */
+.hamburger {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #333;
+  user-select: none;
+}
+
+/* Mobile view */
+@media (max-width: 768px) {
+  nav ul {
+    display: none; /* Sakrij glavni meni */
+    flex-direction: column;
+    background: white;
+    position: absolute;
+    top: 60px; /* prilagodi po visini headera */
+    right: 0;
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    padding: 10px 0;
+    z-index: 1000;
+  }
+
+  nav ul.show {
+    display: flex;
+  }
+
+  nav ul li {
+    padding: 10px 20px;
+  }
+
+  nav ul li a {
+    color: #333;
+    text-decoration: none;
+    font-weight: 600;
+  }
+
+  .hamburger {
+    display: block; /* Prikaz na mobilnim */
+  }
+
+  /* Ikonice u headeru ostaju vidljive, možeš ih prilagoditi ako treba */
+  .icons {
+    display: flex;
+    gap: 15px;
+  }
+
+  /* Ako želiš, smanji veličinu ili raspored ikonica na mobilnom */
+  .icons i {
+    font-size: 20px;
+    cursor: pointer;
+  }
+}
+
+
+
+
+
+
+
+
+
+

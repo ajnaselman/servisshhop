@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Servis & Shop "AS"</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <div class="top-bar">
+    <div class="marquee">
+      Besplatna dostava za narudžbe preko 100 KM
+    </div>
+  </div>
+
+  <header>
+    <div class="logo-container">
+      <img src="image1.jpg" alt="Logo">
+      <div class="logo-text">Servis & Shop "AS"</div>
+    </div>
+    <div class="hamburger">
+    <i class="fas fa-bars"></i>
+  </div>
+
+    <nav>
+
+      <ul>
+        <li><a href="#">Početna</a></li>
+        <li><a href="#">Dijelovi</a></li>
+        <li><a href="#">Gume</a></li>
+        <li><a href="#">Autokozmetika</a></li>
+        <li><a href="#">Kontakt</a></li>
+      </ul>
+    </nav>
+
+    <div class="icons">
+      <i class="fas fa-search"></i>
+      <i class="fas fa-shopping-cart"></i>
+      <i class="fas fa-user"></i>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Dobrodošli u Servis & Shop "AS"</h1>
+      <p>Najbolji dijelovi i servis na jednom mjestu</p>
+      <a href="#ponuda" class="cta-button">Pogledaj ponudu</a>
+    </div>
+  </section>
+
+  <section class="ponuda" id="ponuda">
+    <h2>Naša ponuda</h2>
+    <div class="ponuda-kartice">
+      <div class="kartica">
+        <i class="fas fa-tools"></i>
+        <h3>Servis</h3>
+        <p>Profesionalni auto servis za sve vrste vozila.</p>
+      </div>
+      <div class="kartica">
+        <i class="fas fa-cogs"></i>
+        <h3>Auto dijelovi</h3>
+        <p>Originalni i zamjenski dijelovi po povoljnim cijenama.</p>
+      </div>
+      <div class="kartica">
+        <i class="fas fa-pump-soap"></i>
+        <h3>Autokozmetika</h3>
+        <p>Proizvodi za njegu i održavanje vozila.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="vozilo-izbor">
+    <h2>Odaberite svoje vozilo</h2>
+    <form id="voziloForm">
+      <select id="marka">
+        <option selected disabled>Odaberite marku</option>
+        <option>Audi</option>
+        <option>BMW</option>
+        <option>Volkswagen</option>
+      </select>
+  
+      <select id="model">
+        <option selected disabled>Odaberite model</option>
+      </select>
+  
+      <select id="motor">
+        <option selected disabled>Odaberite motorizaciju</option>
+      </select>
+    </form>
+    <div id="ponude" style="margin-top: 30px;"></div>
+  </section>
+
+  <section class="recenzije">
+    <h2>Šta naši zadovoljni korisnici kažu</h2>
+    
+    <div class="recenzije-wrapper">
+      <div class="recenzija">
+        <div class="korisnik">
+          <div class="ikonica">H</div>
+          <p class="ime">Haris Hodžić</p>
+        </div>
+        <div class="recenzija-text">
+          <p class="ocjena">⭐⭐⭐⭐⭐</p>
+          <p>"Fantastična usluga! Kvalitetni proizvodi i izuzetna brza dostava. Preporučujem svakome!"</p>
+        </div>
+      </div>
+
+      <div class="recenzija">
+        <div class="korisnik">
+          <div class="ikonica">E</div>
+          <p class="ime">Emir Babić</p>
+        </div>
+        <div class="recenzija-text">
+          <p class="ocjena">⭐⭐⭐⭐⭐</p>
+          <p>"Izvrsna ponuda, brza isporuka i uvijek odlična usluga! Bit ću stalni kupac."</p>
+        </div>
+      </div>
+
+      <div class="recenzija">
+        <div class="korisnik">
+          <div class="ikonica">E</div>
+          <p class="ime">Esmir Demirović</p>
+        </div>
+        <div class="recenzija-text">
+          <p class="ocjena">⭐⭐⭐⭐⭐</p>
+          <p>"Bez imalo sumnje najbolja trgovina! Proizvodi su izuzetne kvalitete i cijene su fantastične."</p>
+        </div>
+      </div>
+
+      <div class="recenzija">
+        <div class="korisnik">
+          <div class="ikonica">A</div>
+          <p class="ime">Adem K.</p>
+        </div>
+        <div class="recenzija-text">
+          <p class="ocjena">⭐⭐⭐⭐⭐</p>
+          <p>"Brza dostava i uvijek izuzetno ljubazni. Nikad nisam bio razočaran uslugom!"</p>
+        </div>
+      </div>
+
+      <div class="recenzija">
+        <div class="korisnik">
+          <div class="ikonica">E</div>
+          <p class="ime">Edin Dervišević</p>
+        </div>
+        <div class="recenzija-text">
+          <p class="ocjena">⭐⭐⭐⭐⭐</p>
+          <p>"Odlična usluga, kvalitetni proizvodi, i pristupačne cijene. Preporučujem svakome!"</p>
+        </div>
+      </div>
+
+      <!-- Dodano 5 novih korisnika -->
+      <div class="recenzija">
+        <div class="korisnik">
+          <div class="ikonica">F</div>
+          <p class="ime">Fikret J.</p>
+        </div>
+        <div class="recenzija-text">
+          <p class="ocjena">⭐⭐⭐⭐⭐</p>
+          <p>"Brza i sigurna dostava, proizvodi su tačno ono što sam očekivao. Zaslužuju svaku pohvalu!"</p>
+        </div>
+      </div>
+
+      <div class="recenzija">
+        <div class="korisnik">
+          <div class="ikonica">S</div>
+          <p class="ime">Semir Hadžić</p>
+        </div>
+        <div class="recenzija-text">
+          <p class="ocjena">⭐⭐⭐⭐⭐</p>
+          <p>"Svi proizvodi su vrhunske kvalitete i usluga je bila nevjerojatno brza. Preporučujem svima!"</p>
+        </div>
+      </div>
+
+      <div class="recenzija">
+        <div class="korisnik">
+          <div class="ikonica">D</div>
+          <p class="ime">Demir Islamović</p>
+        </div>
+        <div class="recenzija-text">
+          <p class="ocjena">⭐⭐⭐⭐⭐</p>
+          <p>"Bio sam oduševljen cijelim procesom kupovine. Odabrao sam proizvod i brzo ga dobio. Topla preporuka!"</p>
+        </div>
+      </div>
+
+      <div class="recenzija">
+        <div class="korisnik">
+          <div class="ikonica">A</div>
+          <p class="ime">Alen Z.</p>
+        </div>
+        <div class="recenzija-text">
+          <p class="ocjena">⭐⭐⭐⭐⭐</p>
+          <p>"Izvrsna ponuda i usluga! Brza dostava, a proizvodi su uvijek visoke kvalitete!"</p>
+        </div>
+      </div>
+
+      <div class="recenzija">
+        <div class="korisnik">
+          <div class="ikonica">A</div>
+          <p class="ime">Adel Suljić</p>
+        </div>
+        <div class="recenzija-text">
+          <p class="ocjena">⭐⭐⭐⭐⭐</p>
+          <p>"Svaka čast na brzini dostave i odličnoj ponudi. Bit ću redoviti kupac!"</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="footer">
+    <p>&copy; 2025 Servis & Shop "AS" d.o.o. Sva prava zadržana.</p>
+    <div class="social-media">
+      <a href="https://www.facebook.com" target="_blank">Facebook</a>
+      <a href="https://www.instagram.com" target="_blank">Instagram</a>
+    </div>
+    <div class="contact-info">
+      <p><strong>Lokacija:</strong> Lager-Han Bila, Travnik</p>
+      <p><strong>Kontakt:</strong> +38761-977-611</p>
+      <p><strong>Email:</strong> <a href="mailto:servishop.as@gmail.com">servishop.as@gmail.com</a></p>
+    </div>
+    <div class="footer-links">
+      <a href="#kontakt">Kontakt</a>
+      <a href="#usluge">Naše usluge</a>
+      <a href="#galerija">Galerija</a>
+    </div>
+  </footer>
+  
+<script src="script.js">
+  
+  
+  document.addEventListener('DOMContentLoaded', () => {
+  const hamburger = document.querySelector('.hamburger');
+  const navUL = document.querySelector('nav ul');
+
+  hamburger.addEventListener('click', () => {
+    navUL.classList.toggle('show');
+  });
+});
+
+</script>
+
+
+</body>
+</html>
+
+
+
+
+
